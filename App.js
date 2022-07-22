@@ -23,24 +23,22 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     backgroundColor: "#fff",
     alignItems: "center",
-    
   },
   buttons: {
-    flex: 1,
     flexWrap: "wrap",
+    flexDirection:"row",
     marginTop: 90,
+    marginLeft:60
   },
   back: {
     backgroundColor: "#6B96DC",
-    height:50,
-    width:350,
-    marginTop:0,
+    height: 50,
+    width: 350,
+    marginTop: 0,
     position: "absolute",
-    borderBottomEndRadius:100,
-    borderTopStartRadius:100,
-
+    borderBottomEndRadius: 100,
+    borderTopStartRadius: 100,
   },
 });
