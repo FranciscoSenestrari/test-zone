@@ -1,12 +1,12 @@
-import { View, Image, StyleSheet } from "react-native";
+import { View, Image, StyleSheet , TouchableOpacity} from "react-native";
 import React from "react";
 import Icon from "./svg/user.svg";
 
-const Item = () => {
+const Item = ({source}) => {
   return (
-    <View style={styles.container}>
-      <Image source={require('/components/svg/feet.png')} />
-    </View>
+    <TouchableOpacity style={styles.container}>
+      <Image style={styles.image} source={require("./svg/feet.png")} />
+    </TouchableOpacity>
   );
 };
 
@@ -19,13 +19,22 @@ const styles = StyleSheet.create({
     backgroundColor: "#f4f4f4",
     borderRadius: 20,
     shadowColor: "#c1c1c1",
+    shadowColor: "#000",
     shadowOffset: {
       width: 0,
-      height: 1,
+      height: 2,
     },
-    shadowOpacity: 0.2,
-    shadowRadius: 1.41,
-
-    elevation: 10,
+    shadowOpacity: 0.23,
+    shadowRadius: 2.62,
+    
+    elevation: 4,
+    justifyContent: "center",
+    alignItems: "center",
+    alignContent:"center",
+    margin:25
+  },
+  image: {
+    width: 100 ,
+    height: 100,
   },
 });
