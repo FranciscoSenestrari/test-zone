@@ -1,12 +1,16 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import { View, Text } from "react-native";
+import React from "react";
+import Icon from "./svg/user.svg";
 
 const Item = () => {
   return (
     <View>
-      <Text>Item</Text>
-    </View>
-  )
-}
+          <Text>Item</Text>
+          <Text>Item</Text>
 
-export default Item
+
+    </View>
+  );
+};
+
+export default Item;
